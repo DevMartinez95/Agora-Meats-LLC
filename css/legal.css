@@ -52,6 +52,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 .lg-sec ul{padding-left:20px;margin-bottom:0}
 .lg-sec li + li{margin-top:8px}
 .lg-sec strong{font-weight:600}
+.lg-sec h3{margin:28px 0 0 44px;font:600 17px/1.4 var(--display);color:var(--navy)}
+.lg-sec h3 + p{margin-top:8px !important}
 
 /* footer */
 .ftr{border-top:1px solid var(--line);padding:40px 0 32px}
@@ -72,6 +74,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   .brand small{font-size:8px;letter-spacing:.24em}
   .lg-sec h2{grid-template-columns:36px minmax(0,1fr);font-size:20px}
   .lg-sec p,.lg-sec ul{margin-left:0 !important}
+  .lg-sec h3{margin-left:0}
 }
 @media (max-width:540px){
   .hdr-in{flex-wrap:wrap;height:auto;padding-block:10px 0;row-gap:2px}
