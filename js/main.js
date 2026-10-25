@@ -45,7 +45,8 @@
   var sent = document.querySelector(".sent");
   var errorEl = form.querySelector(".form-error");
   var cut = document.getElementById("cut");
-  var cuts = JSON.parse(document.getElementById("cuts-data").textContent);
+  var cutsEl = document.getElementById("cuts-data");
+  var cuts = cutsEl ? JSON.parse(cutsEl.textContent) : {};
 
   function syncPills() {
     form.querySelectorAll(".pill").forEach(function (p) {
@@ -53,6 +54,7 @@
     });
   }
   function fillCuts() {
+    if (!cut) return;
     var checked = form.querySelector('input[name="protein"]:checked');
     var list = checked ? cuts[checked.value] : [];
     cut.innerHTML = '<option value="">—</option>';

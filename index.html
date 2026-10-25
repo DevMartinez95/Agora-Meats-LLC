@@ -170,9 +170,8 @@
 <section class="contact" id="contact">
 <div class="c-info">
 <p class="lbl">Contact &amp; Trade Portal</p>
-<h2 class="h2">Initiate a Trade Inquiry</h2>
-<h3>Partner with Ágora Meats, LLC</h3>
-<p>Whether you are an international importer seeking verified U.S. protein supply or a North American trader expanding into Caribbean and Latin American markets, our team is ready to structure your next transaction.</p>
+<h2 class="h2">Join Our Exclusive Buyer Network</h2>
+<p>Fill out these basic details to initiate your commercial onboarding with Ágora Meats.</p>
 <dl>
 <div><dt>Corporate Office</dt><dd>Miami, Florida, USA</dd></div>
 <div><dt>Email</dt><dd><a href="mailto:info@agorameats.com">Info@AgoraMeats.com</a><a href="mailto:trade@agorameats.com">Trade@AgoraMeats.com</a><a href="mailto:admin@agorameats.com">Admin@AgoraMeats.com</a></dd></div>
@@ -183,78 +182,30 @@
 <div class="c-form">
 <div class="sent" role="status" tabindex="-1" hidden>
 <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" fill="none" stroke="#C59B27" stroke-width="2"><circle cx="28" cy="28" r="26"/><path d="M17 29l7 7 15-15"/></svg>
-<h3>Trade Inquiry Received</h3>
-<p>Thank you for contacting Ágora Meats, LLC. Our team will review your product specifications, volume requirements, and shipment parameters, and will respond to your corporate email to structure your next transaction.</p>
-<button type="button" class="btn btn-outline" data-reset>SUBMIT ANOTHER INQUIRY</button>
+<h3>Application Received</h3>
+<p>Thank you for your interest in Ágora Meats, LLC. Our team will review your details and contact you at your corporate email to continue your commercial onboarding.</p>
+<button type="button" class="btn btn-outline" data-reset>SUBMIT ANOTHER APPLICATION</button>
 </div>
 
 <!-- FORM ENDPOINT: paste your form service URL (e.g. Formspree) into data-endpoint. Empty = demo mode (shows the confirmation without sending). -->
 <form id="inquiry" data-endpoint="" method="post">
 <input type="hidden" name="language" value="en">
+<input type="hidden" name="_subject" value="New Quick Buyer Application — Ágora Meats (EN)">
 
 <fieldset>
-<legend>1. Contact Details &amp; Profile</legend>
+<legend>Quick Buyer Application</legend>
 <div class="fgrid">
-<label class="f">Full Name *<input class="field" type="text" name="name" autocomplete="name" required></label>
-<label class="f">Company Name *<input class="field" type="text" name="company" autocomplete="organization" required></label>
-<label class="f">Corporate Email *<input class="field" type="email" name="email" autocomplete="email" required></label>
-<label class="f">Phone / WhatsApp *<input class="field" type="tel" name="phone" autocomplete="tel" required></label>
-</div>
-<p class="q" id="q-role">Role</p>
-<div class="pills" role="radiogroup" aria-labelledby="q-role">
-<label class="pill"><input class="sr" type="radio" name="role" value="importer">Importer / Buyer</label>
-<label class="pill"><input class="sr" type="radio" name="role" value="supplier">Supplier / Processor / Trader</label>
-<label class="pill"><input class="sr" type="radio" name="role" value="distributor">Distributor</label>
+<label class="f">Company Legal Name *<input class="field" type="text" name="company_legal_name" autocomplete="organization" required></label>
+<label class="f">Tax ID / RNC Number *<input class="field" type="text" name="tax_id" autocomplete="off" required></label>
+<label class="f">Contact Name &amp; Title *<input class="field" type="text" name="contact_name_title" autocomplete="name" required></label>
+<label class="f">Corporate Email Address *<input class="field" type="email" name="email" autocomplete="email" required></label>
+<label class="f">Direct Phone / WhatsApp *<input class="field" type="tel" name="phone" autocomplete="tel" required></label>
 </div>
 </fieldset>
 
-<fieldset>
-<legend>2. Product &amp; Technical Specification</legend>
-<label class="f solo">Destination Country *<input class="field" type="text" name="destination" autocomplete="country-name" required></label>
-<p class="q" id="q-protein">Protein Category *</p>
-<div class="pills" role="radiogroup" aria-labelledby="q-protein">
-<label class="pill"><input class="sr" type="radio" name="protein" value="beef" required>Beef &amp; Veal</label>
-<label class="pill"><input class="sr" type="radio" name="protein" value="pork" required>Pork</label>
-<label class="pill"><input class="sr" type="radio" name="protein" value="poultry" required>Poultry</label>
-</div>
-<div class="fgrid">
-<label class="f">Cut Classification<select class="field" name="cut" id="cut" disabled><option value="">—</option></select></label>
-<label class="f">Detailed Cut Specification<input class="field" type="text" name="cut_spec"></label>
-</div>
-</fieldset>
-
-<fieldset>
-<legend>3. Volume &amp; Logistics Parameters</legend>
-<p class="sub">Required Volume</p>
-<p class="q" id="q-containers">Number of Containers (40ft FCL Reefer)</p>
-<div class="pills" role="radiogroup" aria-labelledby="q-containers">
-<label class="pill"><input class="sr" type="radio" name="containers" value="1">1 Container</label>
-<label class="pill"><input class="sr" type="radio" name="containers" value="2-4">2-4 Containers</label>
-<label class="pill"><input class="sr" type="radio" name="containers" value="5+">5+ Containers</label>
-</div>
-<div class="inline">
-<label class="f">Or Estimated Weight in Lbs / Metric Tons<input class="field" type="number" min="0" step="any" name="weight" inputmode="decimal"></label>
-<select class="field" name="unit" aria-label="Or Estimated Weight in Lbs / Metric Tons"><option value="lbs">Lbs</option><option value="metric_tons">Metric Tons</option></select>
-</div>
-<p class="q" id="q-window">Target Shipment Window</p>
-<div class="pills" role="radiogroup" aria-labelledby="q-window">
-<label class="pill"><input class="sr" type="radio" name="shipment_window" value="spot">Immediate / Spot Market (1 - 15 days)</label>
-<label class="pill"><input class="sr" type="radio" name="shipment_window" value="30_days">Within 30 days</label>
-<label class="pill"><input class="sr" type="radio" name="shipment_window" value="scheduled">Scheduled (60+ days / Recurring Contract)</label>
-</div>
-<p class="q">Delivery Terms (Incoterm)</p>
-<label class="check"><input type="checkbox" name="incoterm" value="FOB" checked><span>FOB U.S. Departure Port (Miami / Port Everglades / U.S. Exit Port)</span></label>
-<p class="fine">(Note: Ágora Meats handles product allocation and export documentation (USDA/FSIS) delivered to the U.S. departure port. Ocean freight, import clearance, and destination taxes are managed by the buyer).</p>
-</fieldset>
-
-<fieldset>
-<legend>4. Additional Requirements &amp; Submission</legend>
-<label class="f solo">Additional Notes / Certification Requirements<textarea class="field" name="notes" rows="4"></textarea></label>
-</fieldset>
-
-<p class="form-error" role="alert" hidden>We couldn’t send your inquiry. Please try again or email Trade@AgoraMeats.com.</p>
+<p class="form-error" role="alert" hidden>We couldn’t send your application. Please try again or email Info@AgoraMeats.com.</p>
 <div class="send">
-<button type="submit" class="btn btn-navy">SUBMIT TRADE INQUIRY</button>
+<button type="submit" class="btn btn-navy">SUBMIT APPLICATION</button>
 </div>
 </form>
 </div>
