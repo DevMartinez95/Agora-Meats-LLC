@@ -160,7 +160,7 @@ textarea.field{height:auto;padding:12px 14px;resize:vertical}
 .check{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid var(--control);border-radius:2px;background:var(--ivory);cursor:pointer;font-size:14px;line-height:1.5}
 .check input{width:18px;height:18px;margin:1px 0 0;accent-color:var(--blue);flex-shrink:0}
 .fine{margin-top:12px !important;font-size:13px;line-height:1.6;color:var(--muted);font-style:italic}
-.send{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:flex-end;padding-top:28px;border-top:1px solid var(--line)}
+.send{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:flex-start;padding-top:28px;border-top:1px solid var(--line)}
 .send .btn{min-height:56px;padding:14px 32px}
 .sent{max-width:600px;padding:24px 0;outline:none}
 .sent h3{margin-top:24px;font:700 clamp(26px,2.4vw,32px)/1.2 var(--display);letter-spacing:-.015em;color:var(--navy)}
